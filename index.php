@@ -34,10 +34,12 @@ $censura = str_replace($name, '***', $testo);
 </head>
 <body>
 
+<h2>Testo originale</h2>
 <p> <?php var_dump($testo); ?></p>
 
 <p>Censuro subito la parola: <?php echo $name ;?></p>
 
+<h2>Testo censurato</h2>
 <p> <?php var_dump($censura); ?></p>
 
 
