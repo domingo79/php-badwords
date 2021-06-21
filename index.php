@@ -1,4 +1,3 @@
-<!-- puttana x 9, culo x 2, cazzo x 2, merda x 1, sega x 1. -->
 <?php
 $testo = 'Sei carino
 Sei simpatico
@@ -21,6 +20,9 @@ Io prendo una fionda e mi lancio a lezioni di step
 Almeno guardo un po\' di culo in vista con paillettes
 Al posto di \'sti culi ciccioni come una crêpe
 Non c\'è…';
+
+$name = $_GET["name"];
+$censura = str_replace($name, '***', $testo);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +35,11 @@ Non c\'è…';
 <body>
 
 <p> <?php var_dump($testo); ?></p>
+
+<p>Censuro subito la parola: <?php echo $name ;?></p>
+
+<p> <?php var_dump($censura); ?></p>
+
 
 </body>
 </html>
